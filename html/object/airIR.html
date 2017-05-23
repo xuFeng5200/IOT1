@@ -1,0 +1,446 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+		<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+		<title>Hello APP</title>
+		<link rel="stylesheet" type="text/css" href="../../css/api.css" />
+		<style type="text/css">
+			html, body {
+				height: 100%;
+			}
+			#wrap {
+				height: 100%;
+				display: -moz-flex;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-box-orient: vertical;
+				-moz-flex-flow: column;
+				-webkit-flex-flow: column;
+				flex-flow: column;
+			}
+			#header {
+				background-image: url(../../image/image_ir_04.jpg);
+				background-repeat: repeat-x;
+				height: 55px;
+				width: 100%;
+				text-align: center;
+				display: -moz-flex;
+				display: -webkit-flex;
+				display: flex;
+				font-size: 18px;
+				color: #FFF;
+				line-height: 3em;
+			}
+			#header  .space1 {
+				width: 17px;
+				height: 55px;
+			}
+			#header  .header_l {
+				height: 55px;
+			}
+			#header  span {
+				font-size: 18px;
+				color: #FFF;
+				width: 100%;
+				text-align: center;
+				line-height: 45px;
+				display: inline-block;
+				margin-top: 10px;
+			}
+			#header  .header_r {
+				height: 55px;
+			}
+			#header  .space2 {
+				width: 16px;
+				height: 55px;
+			}
+			#main {
+				-webkit-box-flex: 1;
+				-webkit-flex: 1;
+				flex: 1;
+			}
+			#main  .main_sub1 {
+				background-image: url(../../image/image_ir_11.jpg);
+				background-repeat: repeat-x;
+				height: 170px;
+				width: 100%;
+				display: -moz-flex;
+				display: -webkit-flex;
+				display: flex;
+			}
+			#main  .main_sub1  .main_sub1_l  ul {
+				height: 170px;
+				font-size: 10px;
+				color: #7f9caf;
+				text-align: center;
+				display: -moz-flex;
+				display: -webkit-flex;
+				display: flex;
+				-moz-flex-flow: column;
+				-webkit-flex-flow: column;
+				flex-flow: column;
+				margin-top: 10px;
+				margin-left: 32px;
+				margin-right: 124px;
+			}
+			#main  .main_sub1  .main_sub1_l  ul li {
+				-webkit-box-flex: 1;
+				-webkit-flex: 1;
+				flex: 1;
+				padding-top: 8px;
+			}
+			#main  .main_sub1  .main_sub1_l  .main_sub1_l_li1 {
+				background-image: url(../../image/image_ir_09.jpg);
+				background-repeat: no-repeat;
+				width: 30px;
+				background-size: contain;
+			}
+			#main  .main_sub1  .main_sub1_l  .main_sub1_l_li2 {
+				background-image: url(../../image/image_ir_14.jpg);
+				background-repeat: no-repeat;
+				width: 30px;
+				background-size: contain;
+			}
+			#main  .main_sub1  .main_sub1_l  .main_sub1_l_li3 {
+				background-image: url(../../image/image_ir_14-08.jpg);
+				background-repeat: no-repeat;
+				width: 30px;
+				background-size: contain;
+			}
+			#main  .main_sub1  .main_sub1_l  .main_sub1_l_li4 {
+				background-image: url(../../image/image_ir_16-09.jpg);
+				background-repeat: no-repeat;
+				width: 30px;
+				background-size: contain;
+			}
+			#main  .main_sub1  h1 {
+				font-size: 80px;
+				color: #FFF;
+				margin-top: 40px;
+			}
+			#main  .main_sub1  img {
+				margin-top: 50px;
+			}
+			#main  .main_sub2 {
+				background-image: url(../../image/image_ir_25.jpg);
+				background-repeat: repeat-x;
+				height: 329px;
+				width: 100%;
+				display: -moz-flex;
+				display: -webkit-flex;
+				display: flex;
+				-moz-flex-flow: column;
+				-webkit-flex-flow: column;
+				flex-flow: column;
+			}
+			#main  .main_sub2  .main_sub2_u  ul {
+				height: 33px;
+				width: 100%;
+				display: -moz-flex;
+				display: -webkit-flex;
+				display: flex;
+				margin-top: 22px;
+				font-size: 14px;
+				color: #fff;
+			}
+			#main  .main_sub2  .main_sub2_u  ul li {
+				background-image: url(../../image/image_ir_30.png);
+				background-repeat: no-repeat;
+				width: 68px;
+				height: 30px;
+				background-size: contain;
+				margin-left: 15px;
+				padding-top: 8px;
+				text-align: center;
+			}
+			#main  .main_sub2  .main_sub2_d {
+				width: 100%;
+				display: -moz-flex;
+				display: -webkit-flex;
+				display: flex;
+			}
+			#main  .main_sub2  .main_sub2_d  .main_sub2_d_l {
+				width: 50%;
+				margin-top: 34px;
+				margin-left: 41px;
+			}
+			#main  .main_sub2  .main_sub2_d  .main_sub2_d_l  .main_sub2_d_l_li1 {
+				background-image: url(../../image/image_ir_31.png);
+				background-repeat: no-repeat;
+				width: 62px;
+				height: 51px;
+				background-size: contain;
+			}
+			#main  .main_sub2  .main_sub2_d  .main_sub2_d_l  .main_sub2_d_l_li2 {
+				background-image: url(../../image/image_ir_39.png);
+				background-repeat: no-repeat;
+				width: 62px;
+				height: 40px;
+				background-size: contain;
+				margin-top: 0px;
+			}
+			#main  .main_sub2  .main_sub2_d  .main_sub2_d_l  .main_sub2_d_l_li3 {
+				background-image: url(../../image/image_ir_34.png);
+				background-repeat: no-repeat;
+				width: 62px;
+				height: 51px;
+				background-size: contain;
+				margin-top: -1px;
+			}
+			#main  .main_sub2  .main_sub2_d  .main_sub2_d_r {
+				background-image: url(../../image/image_ir_37.png);
+				background-repeat: no-repeat;
+				width: 71px;
+				height: 30px;
+				background-size: contain;
+				display: -moz-flex;
+				display: -webkit-flex;
+				display: flex;
+				font-size: 12px;
+				color: #FFFFFF;
+				padding-left: 5px;
+				padding-top: 55px;
+				margin-top: 63px;
+			}
+			.show1 {
+				visibility: hidden;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="header">
+				<b class="space1"></b>
+				<img  id="img1" src="../../image/image_ir_02.jpg" width="26" height="55" class="header_l"/>
+				<span>格力空调 啊啊吧</span>
+				<img src="../../image/image_ir_06.jpg" width="27" height="55" class="header_r"/>
+				<b class="space2"></b>
+			</div>
+			<div id="main">
+				<div class="main_sub1">
+					<div class="main_sub1_l">
+						<ul class="show1">
+							<li class="main_sub1_l_li1"></li>
+							<li class="main_sub1_l_li2"></li>
+							<li class="main_sub1_l_li3"></li>
+							<li class="main_sub1_l_li4"></li>
+						</ul>
+					</div>
+					<h1 id="temperature" class="show1">26</h1>
+					<img src="../../image/image_ir_16.jpg" width="48" height="75" class="show1"/>
+				</div>
+				<div class="main_sub2">
+					<div class="main_sub2_u">
+						<ul>
+							<li id="bt_mode" class="bt_mode">
+								模式
+							</li>
+							<li class="bt_mode">
+								风量
+							</li>
+							<li class="bt_mode">
+								上下扫风
+							</li>
+							<li class="bt_mode">
+								左右扫风
+							</li>
+						</ul>
+					</div>
+					<div class="main_sub2_d">
+						<div class="main_sub2_d_l">
+							<ul>
+								<li class="main_sub2_d_l_li1"></li>
+								<li class="main_sub2_d_l_li2"></li>
+								<li class="main_sub2_d_l_li3"></li>
+							</ul>
+						</div>
+						<div class="main_sub2_d_r">
+							POWER OFF
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="footer"></div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../../script/api.js"></script>
+	<script type="text/javascript" src="../../script/jquery.js"></script>
+	<script type="text/javascript">
+		var bt_onoff = false;
+		var bt_mode_count = 0;
+		var bt_wind_count = 0;
+		var bt_tbScan_count = 0;
+		var bt_lrScan_count = 0;
+		apiready = function() {
+			var header = $api.byId('header');
+			//适配iOS 7+，Android 4.4+状态栏
+			$api.fixStatusBar(header);
+			api.setStatusBarStyle({
+				style : 'light'
+			});
+			var headerPos = $api.offset(header);
+			var main = $api.byId('main');
+			var mainPos = $api.offset(main);
+			/*			api.openFrame({
+			 name : 'main',
+			 url : 'html/main.html',
+			 bounces : true,
+			 rect : {
+			 x : 0,
+			 y : headerPos.h,
+			 w : 'auto',
+			 h : mainPos.h
+			 }
+			 });
+			 */
+			$(".show1").css({
+				visibility : "hidden"
+			});
+			$(".main_sub2_d_r").bind("click", function(event) {
+				event.preventDefault();
+				if (bt_onoff) {
+					$(this).css("background-image", "url(../../image/image_ir_37.png)");
+					$(this).empty();
+					$(this).append("POWER OFF");
+					bt_onoff = false;
+					//				document.getElementById("temperature").style.visibility="hidden";
+					$(".show1").css({
+						visibility : "hidden"
+					});
+				} else {
+					$(this).css("background-image", "url(../../image/image_ir_37_d.png)");
+					$(this).empty();
+					$(this).append("POWER ON");
+					bt_onoff = true;
+					//					document.getElementById("temperature").style.visibility="visible";
+					$(".show1").css({
+						visibility : "visible"
+					});
+				}
+			});
+			/****************按键组事件处理******************/
+			$(".bt_mode").bind("touchstart", function(event) {
+				if (bt_onoff) {
+					event.preventDefault();
+					$(this).css("background-image", "url(../../image/image_ir_30_d.png)");
+				}
+			});
+			$(".bt_mode").bind("touchend", function(event) {
+				if (bt_onoff) {
+					event.preventDefault();
+					$(this).css("background-image", "url(../../image/image_ir_30.png)");
+					//					alert($(this).text());
+					if ($.trim($(this).text()) == $.trim('模式')) {
+						if (bt_mode_count < 1) {
+							bt_mode_count++;
+						} else {
+							bt_mode_count = 0;
+						}
+						switch(bt_mode_count) {
+							case 0:
+								$(".main_sub1_l_li1").css("background-image", "url(../../image/image_ir_09.jpg)");
+								break;
+						    case 1:
+								$(".main_sub1_l_li1").css("background-image", "url(../../image/image_ir_10.jpg)");
+								break;
+						    default: break;
+						}
+					}else if ($.trim($(this).text()) == $.trim('风量')) {
+						if (bt_mode_count < 3) {
+							bt_mode_count++;
+						} else {
+							bt_mode_count = 1;
+						}
+						switch(bt_mode_count) {
+							case 1:
+								$(".main_sub1_l_li2").empty();
+					            $(".main_sub1_l_li2").append(bt_mode_count);
+								break;
+						    case 2:
+								$(".main_sub1_l_li2").empty();
+					            $(".main_sub1_l_li2").append(bt_mode_count);
+								break;
+							case 3:
+								$(".main_sub1_l_li2").empty();
+					            $(".main_sub1_l_li2").append(bt_mode_count);
+								break;
+						    default: break;
+						}
+					}else if ($.trim($(this).text()) == $.trim('上下扫风')) {
+					    if( bt_tbScan_count ){
+					        bt_tbScan_count = 0;
+					        $(".main_sub1_l_li3").empty();
+					        $(".main_sub1_l_li3").append('on');
+					    }else{
+					        bt_tbScan_count = 1;
+					        $(".main_sub1_l_li3").empty();
+					        $(".main_sub1_l_li3").append('off');
+					    }
+					}else if ($.trim($(this).text()) == $.trim('左右扫风')) {
+					    if( bt_lrScan_count ){
+					        bt_lrScan_count = 0;
+					        $(".main_sub1_l_li4").empty();
+					        $(".main_sub1_l_li4").append('on');
+					    }else{
+					        bt_lrScan_count = 1;
+					        $(".main_sub1_l_li4").empty();
+					        $(".main_sub1_l_li4").append('off');
+					    }
+					}
+				}
+			});
+			$(".main_sub2_d_l_li1").bind("touchstart", function(event) {
+				if (bt_onoff) {
+					event.preventDefault();
+					$(".main_sub2_d_l_li1").css("background-image", "url(../../image/image_ir_31_d.png)");
+				}
+			});
+			$(".main_sub2_d_l_li1").bind("touchend", function(event) {
+				if (bt_onoff) {
+					event.preventDefault();
+					$(".main_sub2_d_l_li1").css("background-image", "url(../../image/image_ir_31.png)");
+					var temperature = parseInt($("#temperature").text());
+					if (temperature < 30) {
+						temperature++;
+					}
+					$("#temperature").empty();
+					$("#temperature").append(temperature);
+				}
+			});
+			$(".main_sub2_d_l_li3").bind("touchstart", function(event) {
+				if (bt_onoff) {
+					event.preventDefault();
+					$(".main_sub2_d_l_li3").css("background-image", "url(../../image/image_ir_34_d.png)");
+				}
+			});
+			$(".main_sub2_d_l_li3").bind("touchend", function(event) {
+				if (bt_onoff) {
+					event.preventDefault();
+					$(".main_sub2_d_l_li3").css("background-image", "url(../../image/image_ir_34.png)");
+					var temperature = parseInt($("#temperature").text());
+					if (temperature > 16) {
+						temperature--;
+					}
+					$("#temperature").empty();
+					$("#temperature").append(temperature);
+				}
+			});
+			/*************js按键事件处理
+			 var bt_plus = document.getElementById("bt_plus");
+			 // 触摸
+			 bt_plus.ontouchstart = function() {
+			 // 背景变绿
+			 this.style.backgroundImage = "url('../../image/image_ir_31_d.png')";
+			 };
+			 // 停止触摸
+			 bt_plus.ontouchend = function() {
+			 // 还原白色
+			 //this.style.backgroundColor = "white";
+			 this.style.backgroundImage = "url('../../image/image_ir_31.png')";
+			 };
+			 *************/
+		};
+	</script>
+</html>
